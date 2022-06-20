@@ -1,0 +1,9 @@
+{
+  "allure": {
+    "directory": "allure-results",
+    "links": [
+      "https://localhost/jira/issues/{issue}",
+      "https://localhost/tms/{tms}"
+    ]
+  }
+}

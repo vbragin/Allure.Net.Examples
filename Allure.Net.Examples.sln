@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NUnit", "NUnit", "{465B7B96-E34D-4F04-B375-9228A1623FA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xUnit", "xUnit", "{8635B535-4752-4AF6-B0D8-D350312F5C7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Net.Examples.xUnit.Tests", "Allure.Net.Examples.xUnit.Tests\Allure.Net.Examples.xUnit.Tests.csproj", "{F80B8B79-947E-4A1B-90C3-2AFD4A596222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Net.Examples.NUnit.Tests", "Allure.Net.Examples.NUnit.Tests\Allure.Net.Examples.NUnit.Tests.csproj", "{4990D20D-F00E-4805-890B-0328BE6B3E1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F80B8B79-947E-4A1B-90C3-2AFD4A596222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80B8B79-947E-4A1B-90C3-2AFD4A596222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80B8B79-947E-4A1B-90C3-2AFD4A596222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80B8B79-947E-4A1B-90C3-2AFD4A596222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4990D20D-F00E-4805-890B-0328BE6B3E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4990D20D-F00E-4805-890B-0328BE6B3E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4990D20D-F00E-4805-890B-0328BE6B3E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4990D20D-F00E-4805-890B-0328BE6B3E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F80B8B79-947E-4A1B-90C3-2AFD4A596222} = {8635B535-4752-4AF6-B0D8-D350312F5C7F}
+		{4990D20D-F00E-4805-890B-0328BE6B3E1B} = {465B7B96-E34D-4F04-B375-9228A1623FA4}
+	EndGlobalSection
+EndGlobal
