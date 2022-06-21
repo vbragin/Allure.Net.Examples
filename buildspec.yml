@@ -7,6 +7,11 @@ env:
     BUILD_CONFIGURATION: 'Release'
     RESTORE_OUTPUT_PATH: 'packages'
     PACKAGE_OUTPUT_PATH: 'artifacts'
+  exported-variables:
+    - DOTNET_FRAMEWORK
+    - BUILD_CONFIGURATION
+    - RESTORE_OUTPUT_PATH
+    - PACKAGE_OUTPUT_PATH
 
 batch:
   fast-fail: false
