@@ -31,8 +31,8 @@ phases:
       dotnet: "$DOTNET_FRAMEWORK"
   pre_build:
     commands:
-      - dotnet restore $PROJECT_NAME/$PROJECT_NAME.csproj --packages $RESTORE_OUTPUT_PATH
+      - dotnet restore ./$PROJECT_NAME/$PROJECT_NAME.csproj --packages $RESTORE_OUTPUT_PATH
   build:
     commands:
-      - dotnet build $PROJECT_NAME/$PROJECT_NAME.csproj --no-restore --configuration $BUILD_CONFIGURATION
-      - dotnet test $PROJECT_NAME/$PROJECT_NAME.csproj --no-restore --configuration $BUILD_CONFIGURATION
+      - dotnet build ./$PROJECT_NAME/$PROJECT_NAME.csproj --no-restore --configuration $BUILD_CONFIGURATION
+      - dotnet test ./$PROJECT_NAME/$PROJECT_NAME.csproj --no-restore --configuration $BUILD_CONFIGURATION
