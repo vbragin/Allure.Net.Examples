@@ -1,0 +1,33 @@
+version: 0.2
+
+env:
+  variables:
+    SOLUTION_PATH: Allure.Net.Examples.sln
+    DOTNET_FRAMEWORK: 5.0
+    BUILD_CONFIGURATION: 'Release'
+    RESTORE_OUTPUT_PATH: 'packages'
+    PACKAGE_OUTPUT_PATH: 'artifacts'
+
+batch:
+  fast-fail: false
+  build-list:
+    - identifier: xUnit
+      env:
+        variables:
+          PROJECT_NAME: 'Allure.Net.Examples.xUnit.Tests'
+    - identifier: NUnit
+      env:
+        variables:
+          PROJECT_NAME: 'Allure.Net.Examples.NUnit.Tests'
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: "$DOTNET_FRAMEWORK"
+  pre_build:
+    commands:
+      - dotnet restore $PROJECT_NAME/$PROJECT_NAME.csproj --packages $RESTORE_OUTPUT_PATH
+  build:
+    commands:
+      - dotnet build $PROJECT_NAME/$PROJECT_NAME.csproj --no-restore --configuration $BUILD_CONFIGURATION
+      - dotnet test $PROJECT_NAME/$PROJECT_NAME.csproj --no-restore --configuration $BUILD_CONFIGURATION
