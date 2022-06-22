@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Net.Examples.xUnit.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Net.Examples.NUnit.Tests", "Allure.Net.Examples.NUnit.Tests\Allure.Net.Examples.NUnit.Tests.csproj", "{4990D20D-F00E-4805-890B-0328BE6B3E1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dummy.App", "Dummy.App\Dummy.App.csproj", "{C595D9FA-0FB1-4DCD-87AC-9CAACC87B883}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{4990D20D-F00E-4805-890B-0328BE6B3E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4990D20D-F00E-4805-890B-0328BE6B3E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4990D20D-F00E-4805-890B-0328BE6B3E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C595D9FA-0FB1-4DCD-87AC-9CAACC87B883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C595D9FA-0FB1-4DCD-87AC-9CAACC87B883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C595D9FA-0FB1-4DCD-87AC-9CAACC87B883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C595D9FA-0FB1-4DCD-87AC-9CAACC87B883}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F80B8B79-947E-4A1B-90C3-2AFD4A596222} = {8635B535-4752-4AF6-B0D8-D350312F5C7F}

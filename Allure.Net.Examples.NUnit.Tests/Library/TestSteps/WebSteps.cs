@@ -32,7 +32,7 @@ namespace Allure.Net.Examples.NUnit.Tests.Library.TestSteps
          *     TODO: rework step extension
          * </summary>
          */
-        [AllureStep("Stopping web driver")] // <- it doesn't make any sense
+        // [AllureStep("Stopping web driver")] // <- broke testrun as well
         public static void StopDriver()
         {
             MaybeThrowSeleniumTimeoutException();
